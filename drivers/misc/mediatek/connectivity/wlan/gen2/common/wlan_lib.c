@@ -4573,9 +4573,11 @@ WLAN_STATUS wlanLoadManufactureData(IN P_ADAPTER_T prAdapter, IN P_REG_INFO_T pr
 	/* if(prRegInfo->ucEnable5GBand) { // Frank workaround */
 	if (1) {
 		/* check if it is disabled by hardware */
+#ifndef CFG_FORCE_5G_SUPPORT
 		if (prAdapter->fgIsHw5GBandDisabled || prRegInfo->ucSupport5GBand == 0)
 			prAdapter->fgEnable5GBand = FALSE;
 		else
+#endif
 			prAdapter->fgEnable5GBand = TRUE;
 	} else
 		prAdapter->fgEnable5GBand = FALSE;
