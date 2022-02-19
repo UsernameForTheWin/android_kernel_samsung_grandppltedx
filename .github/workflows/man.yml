@@ -15,7 +15,7 @@ exports() {
 # 	export KBUILD_COMPILER_STRING=$($KERNEL_DIR/clang-llvm/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 # 	LD_LIBRARY_PATH=$KERNEL_DIR/clang-llvm/lib64:$LD_LIBRARY_PATH
 # 	export LD_LIBRARY_PATH
-	export CROSS_COMPILE=$KERNEL_DIR/linaro/bin/aarch64-linux-gnu-
+#	export CROSS_COMPILE=$KERNEL_DIR/linaro/bin/aarch64-linux-gnu-
 # 	PATH=$KERNEL_DIR/clang-llvm/bin/:$KERNEL_DIR/aarch64-linux-android-4.9/bin/:$PATH
 # 	export PATH
 	export BOT_MSG_URL="https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage"
