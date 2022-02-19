@@ -1,2 +1,2 @@
 run: |
-./github/workflows/man.sh
+bash /.github/workflows/man.sh
