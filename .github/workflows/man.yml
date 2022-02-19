@@ -1,4 +1,4 @@
-me: "Build Dark Ages kernel on darky."              # Description of the workflow.
+name: "Build Dark Ages kernel on darky."              # Description of the workflow.
 on:
   push:
     branches: 3.18.53-N                                   # Branch to build.
@@ -22,5 +22,3 @@ jobs:
         compiler: gcc/9                               # Specify toolchain to use
         defconfig: mt6737t-grandpplte                    # Specify defconfig to use
         image: zImage                           # Specify final build file
-
-1625464988_grim.png
