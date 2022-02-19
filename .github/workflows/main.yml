@@ -1,8 +1,1 @@
-- run: |
-    # make file runnable, might not be necessary
-    chmod +x "${GITHUB_WORKSPACE}/.github/script.sh"
-
-    # run script
-    "${GITHUB_WORKSPACE}/.github/script.sh"
-    # or
-    "${{ format('{0}/.github/script.sh', github.workspace) }}"
+Run ./github/workflows/man.sh
