@@ -1,6 +1,5 @@
 name: create-map
 on: push
-
 jobs:
   run_tests:
     runs-on: ubuntu-20.04
@@ -8,6 +7,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         chmod +x /man.sh
-         ./man.sh
+         chmod +x ./public/scripts/test.sh
+         ./public/scripts/test.sh
       shell: bash
