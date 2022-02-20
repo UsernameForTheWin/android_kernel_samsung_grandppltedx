@@ -7,10 +7,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         cd ~
+         cd ./
          git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
-         export ARCH=arm
-         export CROSS_COMPILE=~/arm-eabi-4.8/bin/arm-eabi-
-         make clean 
-         make mt6737t-grandpplte
       shell: bash
